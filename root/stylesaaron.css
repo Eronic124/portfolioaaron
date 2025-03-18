@@ -1,0 +1,308 @@
+:root{
+    --text-color: #1a1c2a ;
+    --link-color: #00FFFF ;
+    --background-color: #F5F5DC;
+    
+    
+    }
+    
+    *{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+    }
+    
+    html{
+    scroll-behavior: smooth;
+    }
+    
+    body{
+     font-family: Arial, sans-serif;
+    background-color: rgb(212, 196, 196);
+    scroll-behavior: smooth;
+    }
+    
+    a{
+    color: var(--link-color);
+    text-decoration: none;
+    }
+    
+   
+   /*NAV BAR*/
+    
+   nav {
+    background-color: cadetblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    height: 88px;
+}
+
+nav .left a {
+    color: var(--text-color);
+    font-size: 22px;
+    font-weight: 600;
+    transition: 0.25s;
+    position: relative; 
+    text-decoration: none; 
+    padding: 5px 10px; 
+}
+
+nav .left a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+    background: blue;
+    scale: 1 0;
+    transition: 0.45s ease-in-out;
+    border-radius: 10px;
+    z-index: -1;
+}
+
+nav .left a:hover {
+    color: black;
+}
+
+nav .left a:hover::after {
+    scale: 1 1;
+}
+
+    
+    nav .right a{
+    color: var(--text-color);
+    margin: 0 10px;
+    }
+    
+    nav .right a:last-child{
+    color: var(--text-color);
+    background-color:  var(--background-color);
+    padding: 0 15px;
+    border-radius: 5px;
+    }
+    
+   nav .right a span{
+    margin-left: 5px;
+   }
+    /*Section 1 */
+    .hero{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 50px;
+        margin: 50px 0px;
+
+    }
+    
+    .hero .text {
+        flex: 5;
+        margin-right: 450px;
+    }
+    
+    .hero .headshot {
+        flex: 2;
+        display: flex;
+        justify-content: right;
+    }
+    
+    .hero .text h2 {
+        font-size: 45px;
+    }
+    
+    .hero .text .links {
+        margin: 25px 0;
+    }
+    
+    .hero .text .links a {
+        display: inline-block;
+        padding: 5px 10px;
+        border: 2px solid var(--link-color); 
+        border-radius: 5px;
+        margin-right: 10px;
+        transition: 0.1s;
+        text-decoration: none; 
+    }
+    
+    .hero .text .links a:hover {
+        color: var(--text-color);
+        border: 2px solid var(--text-color);
+    }
+    
+    .hero .headshot img {
+        width: 250px;
+        height: 250px; 
+        border-radius: 50%;
+        object-fit: cover; 
+    }
+    
+    
+   /*section 2 skills section*/
+    
+    .skills{
+    padding: 0 50px;
+    margin-bottom: 100px;
+    }
+    
+    .skills h2{
+    text-align: center;
+    font-size: 35px;
+    }
+    
+    .skills .text{
+    text-align: center;
+    margin-bottom: 20px;
+    }
+    
+    .skills .cells{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    }
+    
+    .skills .cells .cell{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    
+    
+    width: 300px;
+    padding: 100px 20px;
+    margin: 10px;
+    border: 10px solid ;
+    border-radius: 50px;
+    }
+    
+    .skills .cells .cell img{
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    border-radius: 2px;
+    }
+    
+    .skills .cells .cell span {
+        font-size: 18px;
+        color: var(--text-color);
+        font-family: Arial, sans-serif;
+    }
+    
+    /*iframe section*/
+
+    #univ {
+        justify-content: center;
+        align-items: center;
+        padding: 0 10px;
+        background-color: cadetblue;
+        border-radius: 5px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    .univ .school {
+        justify-content: center;
+        align-items:center ;
+        padding: 0 10px;
+        border: var(--background-color);
+        border-radius: 5px;
+    
+    }
+
+    .univ .school img:hover {
+        display: flex;
+        border-radius: 10px;
+    }
+
+    .univ .school iframe {
+        padding-bottom: 10px;
+        margin-bottom: 150px;
+    }
+
+    .univ h2{
+        margin-top: 20px;
+    }
+
+ 
+
+    footer {
+        text-align: center;
+        background-color: cadetblue;
+        font-size: medium;
+        padding: 0 50px;
+        height: 50px;
+    }
+
+    /*INTEREST SECTION*/
+    .interest {
+        background-color: cadetblue;
+        padding: 20px;
+        border-radius: 10px;
+        align-items: center;
+        text-align: center;
+        font-family: Arial, sans-serif;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .interest h2 {
+        text-align: center;
+        border: 2px solid black;
+        padding: 10px;
+        border-radius: 5px;
+        width: 30%;
+        margin: 20px auto; 
+    }
+    
+    .interest .cells .cell img{
+        width: 100px;
+        height: 100px;
+        object-fit: contain;
+        border-radius: 2px;
+        }
+        
+
+    /* Emoticons section*/
+
+    .emoji-table{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .emoji-table table tr:hover {
+        background-color: #e0f7fa; 
+        transition: 0.3s ease-in-out;
+      }
+    
+
+      /* Contacts Scetion*/
+
+      #contacts .info {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        flex-wrap: wrap;
+        text-align: center;
+        border: 2px solid black;  
+        border-radius: 10px;  
+        background-color: #f9f9f9;  
+        width: 50%;  
+        margin: 20px auto;  
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+        margin-top: 20px;
+    }
+    
+    #contacts .info a{
+        color: midnightblue
+    }
+      
+    #contacts .info a:hover {
+        background-color: #e0f7fa; 
+        transform: scale(1.05); 
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+        border-color: #4CAF50; 
+    }
