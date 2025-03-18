@@ -1,0 +1,254 @@
+:root{
+    --text-color: #1a1c2a ;
+    --link-color: #00FFFF ;
+    --background-color: #FFFFFF  ;
+    
+    }
+    
+    *{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+    }
+    
+    html{
+    scroll-behavior: smooth;
+    }
+
+    body{
+     font-family: "Poppins", sans-serif;
+    background-color: rgba(190, 97, 113, 0.966);
+    }
+    
+    a{
+    color: #000080;
+    text-decoration: none;
+    }
+   /*NAV BAR*/
+    
+   nav{
+    background-color: pink;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    height: 88px;
+
+   }
+    
+    nav .left a{
+    color: var(--text-color);
+    font-size: 22px;
+    font-weight: 600;
+    }
+    
+    nav .right a{
+    color: var(--text-color);
+    margin: 0 10px;
+    }
+    
+    nav .right a:last-child{
+    color: var(--text-color);
+    background-color:  var(--background-color);
+    padding: 0 15px;
+    border-radius: 5px;
+    }
+    
+   nav .right a span{
+    margin-left: 5px;
+   }
+    /*Section 1 */
+    .hero{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 50px;
+        margin: 50px 0px;
+        margin-right: 20px;
+    }
+    
+    .hero .text {
+        flex: 5;
+        margin-right: 450px;
+    }
+    
+    .hero .headshot {
+        flex: 2;
+        display: flex;
+        justify-content: right;
+    }
+    
+    .hero .text h2 {
+        font-size: 45px;
+    }
+    
+    .hero .text .links {
+        margin: 25px 0;
+    }
+    
+    .hero .text .links a {
+        display: inline-block;
+        padding: 5px 10px;
+        border: 2px solid #000080; 
+        border-radius: 5px;
+        margin-right: 10px;
+        transition: 0.1s;
+        text-decoration: none; 
+    }
+    
+    .hero .text .links a:hover {
+        color: var(--text-color);
+        border: 2px solid var(--text-color);
+    }
+    
+    .hero .headshot img {
+        width: 250px;
+        height: 250px; 
+        border-radius: 50%;
+        object-fit: cover; 
+    }
+    
+    
+   /*section 2 skills section*/
+   .interest {
+    background-color: pink;
+    padding: 20px;
+    border-radius: 10px;
+    align-items: center;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+/*interest*/
+.interest h2 {
+    text-align: center;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 5px;
+    width: 30%;
+    margin: 20px auto; 
+}
+
+.interest .cells .cell img{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    border-radius: 2px;
+    }
+    
+
+    .skills{
+    padding: 0 50px;
+    margin-bottom: 100px;
+    }
+    
+    .skills h2{
+    text-align: center;
+    font-size: 35px;
+    }
+    
+    .skills .text{
+    text-align: center;
+    margin-bottom: 20px;
+    }
+    
+    .skills .cells{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    }
+    
+    .skills .cells .cell{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    
+    
+    width: 300px;
+    padding: 100px 20px;
+    margin: 10px;
+    border: 10px solid ;
+    border-radius: 50px;
+    }
+    
+    .skills .cells .cell img{
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    border-radius: 2px;
+    }
+    
+    .skills .cells .cell span {
+        font-size: 18px;
+        color: var(--text-color);
+        font-family: Arial, sans-serif;
+    }
+    
+    /*iframe section*/
+
+    #univ {
+        justify-content: center;
+        align-items: center;
+        padding: 0 10px;
+        background-color: pink;
+        border-radius: 5px;
+    }
+
+    .univ .school {
+        justify-content: center;
+        align-items:center ;
+        padding: 0 10px;
+        border: var(--background-color);
+        border-radius: 5px;
+    
+    }
+
+    .univ .school img:hover {
+        display: flex;
+        border-radius: 10px;
+    }
+
+    .univ .school iframe {
+        padding-bottom: 10px;
+        margin-bottom: 150px;
+    }
+
+ 
+
+    footer {
+        text-align: center;
+        background-color: pink;
+        font-size: medium;
+        padding: 0 50px;
+        height: 50px;
+    }
+
+    #contacts .info {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        flex-wrap: wrap;
+        text-align: center;
+        border: 2px solid black;  
+        border-radius: 10px;  
+        background-color: #f9f9f9;  
+        width: 50%;  
+        margin: 20px auto;  
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+        margin-top: 20px;
+    }
+    
+    #contacts .info a{
+        color: midnightblue
+    }
+      
+    #contacts .info a:hover {
+        background-color: #e0f7fa; 
+        transform: scale(1.05); 
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+        border-color: #4CAF50; 
+    }
